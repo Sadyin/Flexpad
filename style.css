@@ -1,3 +1,88 @@
-h1 {
-    color: red;
+body{
+    margin: auto 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
+
+  /* Navigation Section  */
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1em;
+    padding: 20px;
+    background-color: black;
+    color: rgb(197, 197, 197);
+    cursor: pointer;
+    gap: 10px;
+    
+}
+
+.nav-bar #Search {
+    color: aqua;
+    margin-left: auto;
+}
+
+li {
+    padding-left: 12px;
+}
+
+h2 {
+    padding: 30px 30px 0px 30px;
+    color: white;
+}
+
+.sectionPopular{
+    height: 240px;
+    /* border: 1px solid #ddd; */
+    overflow-x: auto;
+    display: flex;
+    padding-left: 30px;
+    padding-right: 15px;
+}
+
+.sectionPopular::-webkit-scrollbar{
+    width: 0;
+}
+
+.sectionPopular .item{
+    min-width: 380px;
+    height: 220px;
+    line-height: 220px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.trendingNow h2{
+
+    padding: 15px 30px 0px 30px;
+    color: white;
+
+}
+
+.topTen h2{
+
+    padding: 15px 30px 0px 30px;
+    color: white;
+
+}
+
+.topTen .sectionPopular .item{
+    min-width: 380px;
+    height: 220px;
+    line-height: 220px;
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 200px;
+
 }
